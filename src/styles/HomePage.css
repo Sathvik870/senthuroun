@@ -1,0 +1,332 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, .homepage {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.book-now-nav {
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-wrapper {
+  background-image: url('../images/summa.jpg'); /* Adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Navbar over background */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 4rem;
+  color: white;
+  font-family: 'Aptos', sans-serif;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.whatsapp-btn,
+.book-now-nav {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.book-now-nav {
+  background-color: white;
+  color: black;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: calc(100vh - 80px); /* Adjust depending on your navbar height */
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  max-width: 600px;
+  color: white;
+  font-family: 'Aptos', sans-serif;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+.circle-btn {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e53935;
+  color: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.circle-text {
+  position: absolute;
+  font-size: 0.65rem;
+  color: #fff;
+  background: gray;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 1.3rem;
+  text-align: center;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Journey Section */
+.journey {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+}
+.journey h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.journey h2 span {
+  color: #b03e3e;
+}
+.journey p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.stats div {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.know-more-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle-btn {
+    width: 90px;
+    height: 90px;
+    font-size: 0.8rem;
+  }
+
+  .circle-text {
+    width: 120px;
+    height: 120px;
+    font-size: 0.6rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-actions {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .journey h2 {
+    font-size: 1.5rem;
+  }
+
+  .stats div {
+    font-size: 1rem;
+  }
+
+  .book-now-nav {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .whatsapp-btn {
+    padding: 0.4rem;
+  }
+
+  .circle-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 0.7rem;
+  }
+
+  .circle-text {
+    width: 100px;
+    height: 100px;
+    font-size: 0.5rem;
+  }
+
+  .journey {
+    padding: 2rem 1rem;
+  }
+}
+/* Two Column Section (Left and Right Aligned) */
+.two-column-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  background: #f4f4f4;
+}
+
+.two-column-section .left-frame,
+.two-column-section .right-frame {
+  flex: 1;
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 16px;
+}
+
+.two-column-section .left-frame {
+  margin-right: 1rem;
+}
+
+.two-column-section .right-frame {
+  margin-left: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .two-column-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .two-column-section .left-frame,
+  .two-column-section .right-frame {
+    margin: 0 0 1.5rem 0;
+  }
+}
+* {
+  font-family: serif;
+}

@@ -7,16 +7,16 @@ const ProfileCardSection = () => {
       <div className="profile-card">
         <div className="profile-image"></div>
         <div className="profile-footer">
-          <h4>Name of the person</h4>
-          <p>Designation</p>
+          <h4>Sathvik</h4>
+          <p>Student</p>
         </div>
       </div>
 
       <div className="profile-card">
         <div className="profile-image"></div>
         <div className="profile-footer">
-          <h4>Name of the person</h4>
-          <p>Designation</p>
+          <h4>Sanjay</h4>
+          <p>Student</p>
         </div>
       </div>
     </div>

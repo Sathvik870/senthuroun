@@ -2,10 +2,10 @@ import React from 'react';
 import '../styles/CardGallery.css'; // Import the CSS file for styling
 
 const imageList = [
-  'https://source.unsplash.com/300x400/?skincare',
-  'https://source.unsplash.com/300x400/?couple',
-  'https://source.unsplash.com/300x400/?traditional,indian',
-  'https://source.unsplash.com/300x400/?siblings,kids'
+  '../images/summa.jpg',
+  '../images/summa.jpg',
+  '../images/summa.jpg',
+  '../images/summa.jpg'
 ];
 
 const RotatingCardGallery = () => {

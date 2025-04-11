@@ -21,7 +21,7 @@
   
   .profile-image {
     flex: 1;
-    background: url('https://via.placeholder.com/160x160') center/cover no-repeat;
+    background: url('../images/summa.jpg') center/cover no-repeat;
   }
   
   .profile-footer {

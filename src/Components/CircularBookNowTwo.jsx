@@ -1,10 +1,9 @@
 import React from 'react';
-import '..styles/CircularBookNowTwo.css'; // Adjust the path as necessary
+import '../styles/CircularBookNowTwo.css'; // Adjust the path as necessary
 
 const CircularBookNowTwo = () => {
   return (
     <div className="circular2-container">
-      <h4 className="component-title">📍 Component 2</h4>
       
       <div className="circle-wrapper">
         <div className="outer-circle">
