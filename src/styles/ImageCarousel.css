@@ -1,0 +1,48 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 20px;
+    perspective: 1000px;
+  }
+  
+  .carousel-image-wrapper {
+    transition: transform 0.3s;
+  }
+  
+  .carousel-image {
+    height: 350px;
+    width: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Curving effect using nth-child */
+  .carousel-image-wrapper:nth-child(1) {
+    transform: rotateY(20deg);
+  }
+  
+  .carousel-image-wrapper:nth-child(2) {
+    transform: rotateY(10deg);
+  }
+  
+  .carousel-image-wrapper:nth-child(3) {
+    transform: rotateY(0deg);
+  }
+  
+  .carousel-image-wrapper:nth-child(4) {
+    transform: rotateY(-10deg);
+  }
+  
+  .carousel-image-wrapper:nth-child(5) {
+    transform: rotateY(-20deg);
+  }
+  
+  /* Hover effect */
+  .carousel-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+  }
+  

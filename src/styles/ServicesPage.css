@@ -1,0 +1,123 @@
+.services-container {
+    font-family: serif;
+    padding: 50px;
+    background: #f9f9f9;
+    color: #1a1a1a;
+  }
+  
+  .services-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+  }
+  
+  .services-title span {
+    color: #833c3c;
+    font-weight: bold;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .service-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 16px 0 0 16px;
+  }
+  
+  .service-content {
+    flex: 1;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  .service-content h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .service-content p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #666;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    color: #666;
+  }
+  
+  .primary {
+    flex-direction: row;
+    background: linear-gradient(to right, #fff, #f9f9f9);
+  }
+  
+  .primary .service-content {
+    padding: 25px 25px;
+  }
+  
+  .primary-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .outline-btn {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: transparent;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .filled-btn {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .bottom-button {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .bottom-button button {
+    padding: 12px 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

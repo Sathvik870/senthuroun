@@ -1,6 +1,10 @@
 import React from 'react';
 import '../styles/HomePage.css';
-
+import ImageCarousel from '../Components/ImageCarousel';
+import CardGallery from '../Components/CardGallery';
+import ServicesPage from './ServicesPage';  
+import TestimonialCarousel from '../Components/TestimonialCarousel';
+import {Link} from 'react-router-dom'
 const HomePage = () => {
   return (
     <div className="homepage">
@@ -9,9 +13,9 @@ const HomePage = () => {
   {/* Navbar */}
   <nav className="navbar">
     <ul className="nav-links">
-      <li>Profile</li>
+      <Link to='/profile'>Profile</Link>
       <li>Portfolio</li>
-      <li>About Us</li>
+      <Link to='/about'>About Us</Link>
       <li>Packages</li>
     </ul>
     <div className="logo">✨Stunning</div>
@@ -50,29 +54,10 @@ const HomePage = () => {
         </div>
         <button className="know-more-btn">Know More</button>
       </section>
-
-
-      {/* Contact and FAQ Section */}
-      <section className="two-column-section">
-        <div className="left-frame">
-          <h2>Contact Us</h2>
-          <p>Have questions or need help? Reach out now.</p>
-          <p>Email: contact@stunningeventz.com</p>
-          <p>Phone: +91 98765 43210</p>
-          <p>Address: 123 Event Street, Celebration City, India</p>
-        </div>
-        <div className="right-frame">
-          <h2>FAQs</h2>
-          <ul>
-            <li>📸 What services do you offer?</li>
-            <li>📍 How do I book an event?</li>
-            <li>💼 Do you provide corporate event coverage?</li>
-            <li>🕐 What is your typical delivery timeline?</li>
-            <li>🎁 Do you offer custom packages?</li>
-          </ul>
-        </div>
-      </section>
-
+      <ImageCarousel/>
+      <ServicesPage/>
+      <TestimonialCarousel/>
+      <CardGallery/>
     </div>
   );
 };

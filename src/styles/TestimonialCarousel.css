@@ -1,0 +1,100 @@
+body {
+    background-color: #d8d8d8;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .testimonial-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f6f6f6;
+  }
+  
+  .testimonial-heading {
+    font-size: 2.5rem;
+    color: #3c2c25;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-heading span {
+    color: #b58b79;
+    font-weight: 500;
+  }
+  
+  .testimonial-heading strong {
+    color: #000;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-side img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .main-card {
+    text-align: left;
+    max-width: 500px;
+    background-color: #fff;
+  }
+  
+  .main-card .quote-image {
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .main-card h3 {
+    color: #1d1d1d;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .main-card p {
+    color: #5f5f5f;
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+  
+  .client-info {
+    font-weight: 600;
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  .carousel-controls {
+    margin-top: 30px;
+  }
+  
+  .carousel-controls button {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-controls button:hover {
+    background-color: #b58b79;
+    color: #fff;
+    border-color: #b58b79;
+  }
+  
